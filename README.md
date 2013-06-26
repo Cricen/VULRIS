@@ -212,8 +212,9 @@ Restart Apache again using:
 
 Copy the contents of Models and Templates folders to the Risu directory and overwrite all. Risu folder: /usr/lib64/ruby/gems/1.8/gems/risu-1.5.3/lib/risu/
 
----more information to come soon in this section... 
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
++---more information to come soon in this section... +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 **Risu Configuration**
 
@@ -237,19 +238,20 @@ This will create a configuration file, however one should already exist in the`l
 
 Locate the directory with the VULRIS_schema.sql file. Enter the following commands in a terminal to set up a database with the proper tables:
 
-# mysql -u root -p < VULRIS_schema.sql
+    mysql -u root -p < VULRIS_schema.sql
+    mysql -u root -p < users.sql
 
-# mysql -u root -p < users.sql
-Setting Permissions
+**Setting Permissions**
 
 Navigate to the root of your web server in a Terminal:
 
-# cd /var/www/html
+    cd /var/www/html
 
 Change the Reports folder’s group to apache:
 
-# chgrp apache Reports
-Firewall Setup
+    chgrp apache Reports
+
+**Firewall Setup**
 
 From the CentOS desktop, choose the System menu from the top bar. Select Administration, then Firewall. In the Other Ports section, modify the firewall settings as shown below to allow secure (https, port 443) traffic and open the :
 Run a Nessus scan
