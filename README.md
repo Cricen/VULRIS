@@ -254,8 +254,7 @@ Change the Reports folder’s group to apache:
 
 **Firewall Setup**
 
-From the CentOS desktop, choose the System menu from the top bar. Select Administration, then Firewall. In the Other Ports section, modify the firewall settings as shown below to allow secure (https, port 443) traffic and open the :
-Run a Nessus scan
+From the CentOS desktop, choose the System menu from the top bar. Select Administration, then Firewall. In the Other Ports section, modify the firewall settings to allow https (https, port 443) traffic. You can also open the nesses port (tcp, 8834). 
 
 Using VULRIS
 -------------------------------------
@@ -268,6 +267,7 @@ http://www.tenable.com/products/nessus/documentation
 Add a Nessus scan to VULRIS
 
 Click the Choose File button and pick an exported .nessus scan file. After clicking Process File, the Nessus file will be uploaded, parsed, and added to the MySQL database.
+
 Report Generation
 
 Choose the Reports Control menu option in VULRIS. Choose a report to generate and click the Report button. Your report will be generated and a PDF will appear shortly. Certain reports may take longer to generate (e.g. graphs, historical, executive summary) depending on the size of
