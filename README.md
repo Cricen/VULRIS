@@ -213,7 +213,9 @@ Restart Apache again using:
 Copy the contents of Models and Templates folders to the Risu directory and overwrite all. Risu folder: /usr/lib64/ruby/gems/1.8/gems/risu-1.5.3/lib/risu/
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 +---more information to come soon in this section... +
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 **Risu Configuration**
@@ -234,14 +236,13 @@ This will create a configuration file, however one should already exist in the`l
     username: [database username]
     password: [database password]
 
-**Database creation**
+**Database creation and permissions**
 
-Locate the directory with the VULRIS_schema.sql file. Enter the following commands in a terminal to set up a database with the proper tables:
+Locate the directory  `var/www/html/lib/Database/`. Enter the following commands in a terminal to set up a database with the proper tables:
 
     mysql -u root -p < VULRIS_schema.sql
     mysql -u root -p < users.sql
 
-**Setting Permissions**
 
 Navigate to the root of your web server in a Terminal:
 
